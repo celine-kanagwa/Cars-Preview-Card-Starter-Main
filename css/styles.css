@@ -31,7 +31,6 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -119,7 +118,7 @@ main {
 {
   border: 1px solid white;
   color: white;
-  padding: 1rem 2rem;
+  /*padding: 1rem 2rem;*/
   border-radius: 2em;
   font-weight: 400;
   cursor: pointer;
