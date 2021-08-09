@@ -22,12 +22,12 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: "Big Shoulders Display", cursive;
-  font-family: "Lexend Deca", sans-serif;
+   /*font-family: "Big Shoulders Display", cursive;*/
+ font-family: "Lexend Deca", sans-serif;
   font-size: 15px;
 }
 
-.card-container {
+.card-container{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,7 +41,7 @@ main {
   margin: auto;
 }
 
-.card1 {
+.sedans-card {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -52,7 +52,7 @@ main {
   border-bottom-left-radius: 10px;
 }
 
-.card2 {
+.suvs-card {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -61,7 +61,7 @@ main {
   padding: 5rem 3rem 5rem 3rem;;
 }
 
-.card3 {
+.luxury-card {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -72,9 +72,9 @@ main {
   border-bottom-right-radius: 10px;
 }
 
-.card1 h1,
-.card2 h1,
-.card3 h1 {
+.sedans-card h1,
+.suvs-card h1,
+.luxury-card h1 {
   color: white;
   font-family: "Big Shoulders Display", cursive;
   margin: 2rem 0;
@@ -82,34 +82,48 @@ main {
   text-transform: uppercase;
 }
 
-.card1 p,
-.card2 p,
-.card3 p {
+.sedans-card p,
+.suvs-card p,
+.luxury-card p {
   color: rgba(255, 255, 255, 0.75);
   margin: 2rem 0 4rem 0;
 }
 
-.card1 button {
+
+.sedans-card button, 
+.suvs-card button, 
+.luxury-card button 
+{
   border: none;
   background: white;
-  color: #e38826;
   padding: 1rem 2rem;
   border-radius: 60px;
   font-weight: 700;
   cursor: pointer;
+  
 }
-
-.card1 button:hover {
+.sedabtn{
+  color: #e38826;
+}
+.suvbtn{
+  color:hsl(184, 100%, 22%); 
+}
+.luxubtn{
+  color: #004241;
+}
+.sedans-card button:hover {
   border: 2px solid white;
   background: #e38826;
+  background-color: #e38826;
   color: white;
   padding: 1rem 2rem;
   border-radius: 60px;
   font-weight: 700;
   cursor: pointer;
+  
 }
 
-.card2 button {
+/*.suvs-card button {
   border: none;
   background: white;
   color: hhsl(184, 100%, 22%);
@@ -117,9 +131,9 @@ main {
   border-radius: 60px;
   font-weight: 700;
   cursor: pointer;
-}
+}*/
 
-.card2 button:hover {
+.suvs-card button:hover {
   border: 2px solid white;
   background: #006970;
   color: white;
@@ -129,7 +143,7 @@ main {
   cursor: pointer;
 }
 
-.card3 button {
+/*.luxury-card button {
   border: none;
   background: white;
   color: #004241;
@@ -137,9 +151,9 @@ main {
   border-radius: 60px;
   font-weight: 700;
   cursor: pointer;
-}
+}*/
 
-.card3 button:hover {
+.luxury-card button:hover {
   border: 2px solid white;
   background: #004241;
   color: white;
@@ -162,19 +176,18 @@ main {
         -ms-flex-align: center;
             align-items: center;
   }
-  .card1{
+  .sedans-card{
     margin-top: 30px;
     -webkit-margin-top: 30px;
     -ms-marigin-top: 30px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 0px;
   }
-  .card3{
+  .luxury-card{
     margin-bottom: 30px;
-    margin-top: 30px;
-    -webkit-margin-top: 30px;
-    -ms-marigin-top: 30px;
-   border-bottom-left-radius: 10px;
+    -webkit-margin-bottom: 30px;
+    -ms-marigin-bottom: 30px;
+    border-bottom-left-radius: 10px;
     border-top-right-radius: 0px;
 }
 }
