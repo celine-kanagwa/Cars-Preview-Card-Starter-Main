@@ -31,6 +31,7 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -47,7 +48,7 @@ main {
           flex: 1;
   background: #e38826;
   text-align: left;
-  padding: 5rem 3rem 5rem 3rem;
+  padding: 4rem 3rem 4rem 3rem;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
@@ -58,7 +59,7 @@ main {
           flex: 1;
   background: #006970;
   text-align: left;
-  padding: 5rem 3rem 5rem 3rem;;
+  padding: 4rem 3rem 4rem 3rem;
 }
 
 .luxury-card {
@@ -67,7 +68,7 @@ main {
           flex: 1;
   background: #004241;
   text-align: left;
-  padding: 5rem 3rem 5rem 3rem;
+  padding: 4rem 3rem 4rem 3rem;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
@@ -100,6 +101,7 @@ main {
   border-radius: 60px;
   font-weight: 700;
   cursor: pointer;
+  box-sizing: border-box;
   
 }
 .sedabtn{
@@ -111,57 +113,27 @@ main {
 .luxubtn{
   color: #004241;
 }
-.sedans-card button:hover {
-  border: 2px solid white;
-  background: #e38826;
-  background-color: #e38826;
+.sedans-card button:hover,
+.suvs-card button:hover,
+.luxury-card button:hover
+{
+  border: 1px solid white;
   color: white;
   padding: 1rem 2rem;
-  border-radius: 60px;
-  font-weight: 700;
+  border-radius: 2em;
+  font-weight: 400;
   cursor: pointer;
-  
-}
-
-/*.suvs-card button {
-  border: none;
-  background: white;
-  color: hhsl(184, 100%, 22%);
-  padding: 1rem 2rem;
-  border-radius: 60px;
-  font-weight: 700;
-  cursor: pointer;
-}*/
-
-.suvs-card button:hover {
-  border: 2px solid white;
-  background: #006970;
-  color: white;
-  padding: 1rem 2rem;
-  border-radius: 60px;
-  font-weight: 700;
-  cursor: pointer;
-}
-
-/*.luxury-card button {
-  border: none;
-  background: white;
-  color: #004241;
-  padding: 1rem 2rem;
-  border-radius: 60px;
-  font-weight: 700;
-  cursor: pointer;
-}*/
-
-.luxury-card button:hover {
-  border: 2px solid white;
-  background: #004241;
-  color: white;
-  padding: 1rem 2rem;
-  border-radius: 60px;
-  font-weight: 700;
-  cursor: pointer;
-}
+  }
+  .sedans-card button:hover{
+    background-color: #e38826;
+    
+  }
+  .suvs-card button:hover{
+    background-color:hsl(184, 100%, 22%); 
+  }
+  .luxury-card button:hover{
+    background-color: #004241;
+  }
 
 @media screen and (max-width: 500px) {
   .card-container {
@@ -182,6 +154,7 @@ main {
     -ms-marigin-top: 30px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 0px;
+   
   }
   .luxury-card{
     margin-bottom: 30px;

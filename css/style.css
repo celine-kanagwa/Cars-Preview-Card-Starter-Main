@@ -99,12 +99,13 @@ for more info check this document https://dev.to/neshaz/how-to-make-all-browsers
    color: #004241;
  }
  .sedans-card button:hover {
-   border: 2px solid white;
+  /* border: 2px solid white;*/
    background-color: #e38826;
    color: white;
-   padding: 1rem 2rem;
+   /*padding: 1rem 2rem;
+
    border-radius: 60px;
-   font-weight: 700;
+   font-weight: 700;*/
    cursor: pointer;
    }
  
@@ -133,11 +134,13 @@ for more info check this document https://dev.to/neshaz/how-to-make-all-browsers
      flex-direction: column;
      justify-content: center;
     align-items: center;
+    
    }
    .sedans-card{
      margin-top: 30px;
      border-top-right-radius: 10px;
      border-bottom-left-radius: 0px;
+     width: 85%;
    }
    .luxury-card{
      margin-bottom: 30px;
